@@ -1,0 +1,12 @@
+.pr-4{
+    padding-right:20px !important;
+}
+.react-datepicker{
+    font-size:1.2em !important;
+    font-weight: 600;
+
+}
+.react-datepicker__header__dropdown.react-datepicker__header__dropdown--scroll {
+    background-color: #000;
+    color: #fff;
+}

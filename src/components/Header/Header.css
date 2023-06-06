@@ -1,0 +1,11 @@
+.custom-header{
+    padding-top:1em;
+    padding-bottom: 1em;
+}
+.calendar-text{
+    font-weight:700;
+    color:#ccc;
+  }
+.font-weight-800{
+    font-weight: 800 !important;
+}

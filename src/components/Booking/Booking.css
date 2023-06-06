@@ -1,0 +1,106 @@
+.font-weight-600{
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+span{
+    font-family:'Open Sans' !important;
+}
+.custom-btn{
+    min-width:100% !important;
+    min-height: 100% !important;
+}
+.first-col {
+    flex: 0 0 10px;
+}
+.min-h-40{
+    min-height: 40px;
+}
+.clearfix{
+    padding:20px;
+}
+.clearfix15{
+    padding:15px;
+}
+.btn-success{
+    background-color: #91D26D;
+    border-radius: 2px !important;
+    border:2px solid transparent !important;
+    border:0;
+    min-height: 40px;
+}
+.pt-8{
+    padding-top:8px;
+}
+.pull-right{
+    float:inline-end;
+}
+.btn-booked{
+    background-color: #E5E5E5;
+    border-top:2px solid transparent;
+    border-bottom:2px solid transparent;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    line-height: 0em;
+    border-radius: 2px;
+}
+.btn-booked:hover{
+    background-color: #E5E5E5;
+    border-top:2px solid #FE8833;
+    border-bottom:2px solid #FE8833;  
+    font-weight: 600;
+    font-family: 'Open Sans';
+    line-height: 0em;
+    border-radius: 2px;
+}
+p{
+    margin-bottom:0 !important;
+
+}
+.fs-14{
+    font-size: 20px !important;
+}
+.available{
+    width: 20px; height: 20px; background-color: #91D26D;
+    border-radius:2px;
+    margin-right:5px;
+}
+.pitch{
+    width: 20px; height: 20px; background-color: #E5E5E5;
+    border-radius:2px;margin-right:5px;
+}
+.birthday{
+    width: 20px; height: 20px; background-color: #D9D9D9;
+    border-radius:2px;margin-right:5px;
+}
+
+.box {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    width: 350px;
+    min-height: 400px;
+    box-shadow:2px 2px 10px 0px #ccc;
+  }
+
+  .btn-booked:hover + .box {
+    display: block;
+  }
+  .btn-cancel{
+    height: 34px;
+    background-color: #000;
+    color:#fff;
+    line-height: 20px;
+  }
+  .border-left{
+    border-left:2px solid #000;
+  }
+  .text-red{
+    color:#FE3333;
+  }
+
+  .modal-dialog{
+    width:50%;
+  }
