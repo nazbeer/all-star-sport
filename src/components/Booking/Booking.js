@@ -2,6 +2,7 @@ import './Booking.css';
 import React, { useEffect, useState } from 'react';
 import Timeslots from './Timeslots';
 import axios from 'axios';
+import Available from './Available';
 const Booking = () => {
     const [data, setFieldData] = useState([]);
    
@@ -15,8 +16,16 @@ const Booking = () => {
 
             try {
                 const response = await axios.get(`https://allstarstports.arenacapital.org/api/v1/fields/get`);
-                setFieldData(response?.data?.data);
-                console.log(response?.data?.data);
+                
+                     if (Array.isArray(response?.data?.data)) {
+                        setFieldData(response?.data?.data);
+                    } else if (typeof response?.data?.data === 'object') {
+                        if (Array.isArray(response?.data?.data)) {
+                            setFieldData(response?.data?.data);
+                        } 
+                        
+                    } 
+                console.log('Fields: ',response?.data?.data);
               } catch (error) {
                 console.error('Error retrieving field data:', error);
               }
@@ -44,7 +53,7 @@ const Booking = () => {
     return(
         <>
         
-        <div className="d-none justify-content-around align-items-center my-2">
+        <div className="d-flex justify-content-around align-items-center my-2">
             <div className='col-2'>
 
             </div>
@@ -58,13 +67,21 @@ const Booking = () => {
         ))}
            
         </div>
+
         <div className='clearfix15'></div>
        
-        <div className="d-flex justify-content-around align-items-center my-2 min-h-40">
+        <div className="d-flex  my-2 min-h-40">
+                <div className='col-md-3  min-h-40 align-items-center '>
+                <Timeslots/>
+                </div>
+                <div className="col-md-9">
+                    <Available/>
+                    </div>
                 
 
-            <div className='col-2 text-center min-h-40 align-items-center pt-8'>
-            <Timeslots/>
+
+            {/* <div className='col-2 text-center min-h-40 align-items-center pt-8'>
+          
             </div>
            
             <div className="col-3 min-h-40">
@@ -243,7 +260,7 @@ const Booking = () => {
             <div className="col-3 min-h-40">
             <button className="btn btn-success w-100 clearfix" type="button"></button>
             </div>
-           
+            */}
         </div>
 
         <div className='row mt-4 mb-3'>
