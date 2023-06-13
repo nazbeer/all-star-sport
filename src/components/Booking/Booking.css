@@ -34,6 +34,38 @@ span{
 .pull-right{
     float:inline-end;
 }
+.custom-size{
+    text-align: center;
+    height:20px !important;
+
+}
+.mb-085{
+    margin-bottom:0.85rem !important;
+}
+.btn-time{
+    background-color: transparent;
+    border-top:2px solid transparent;
+    border-bottom:2px solid transparent;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    line-height: 0em;
+    border-radius: 2px;
+    padding:10px;
+    width: 200px !important;
+    height: 25px !important;
+}
+.btn-time:hover{
+    background-color: #E5E5E5;
+    border:2px solid #FE8833;
+   
+    font-weight: 600;
+    font-family: 'Open Sans';
+    line-height: 0em;
+    width: 200px !important;
+    height: 25px !important;
+    padding:10px;
+    border-radius: 2px;
+}
 .btn-booked{
     background-color: #E5E5E5;
     border-top:2px solid transparent;
@@ -42,6 +74,9 @@ span{
     font-family: 'Open Sans';
     line-height: 0em;
     border-radius: 2px;
+    padding:10px;
+    width: 200px !important;
+    height: 25px !important;
 }
 .btn-booked:hover{
     background-color: #E5E5E5;
@@ -50,6 +85,9 @@ span{
     font-weight: 600;
     font-family: 'Open Sans';
     line-height: 0em;
+    width: 200px !important;
+    height: 25px !important;
+    padding:10px;
     border-radius: 2px;
 }
 p{
